@@ -67,17 +67,11 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {
     номерДокРаспр: attr('Номер док распр', { index: 0 }),
     дата: attr('Дата', { index: 1 }),
-    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', 'Наименование', {
-      наименование: attr('Наименование', { index: 2 })
-    }, { index: -1, hidden: true }),
-    списокБарж: belongsTo('i-i-s-proekt-список-барж', 'Производитель', {
-      производитель: attr('Производитель', { index: 3 })
-    }, { index: -1, hidden: true }),
-    списокКонтей: belongsTo('i-i-s-proekt-список-контей', 'Наим конт', {
-      наимКонт: attr('Наим конт', { index: 4 })
-    }, { index: -1, hidden: true }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'Дата', {
-      дата: attr('Дата', { index: 5 })
+    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'Номер договора', {
+      номерДог: attr('Номер договора', { index: 2 }),
+      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
+        наимЗаказ: attr('наименование заказчика', { index: 3 })
+      }, { index: -1, hidden: true })
     }, { index: -1, hidden: true })
   });
 };
