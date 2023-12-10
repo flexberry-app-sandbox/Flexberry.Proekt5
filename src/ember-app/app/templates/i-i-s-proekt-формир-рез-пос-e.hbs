@@ -35,6 +35,66 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
   </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.номерДокРаспр
+      class=(if (v-get validationModel.формирРаспред "номерДокРаспр" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.номерДокРаспр-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-номерДокРаспр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред "номерДокРаспр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.докумПостав.организация.наименование
+      class=(if (v-get validationModel.формирРаспред.докумПостав.организация "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.докумПостав.организация.наименование-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-докумПостав-организация-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред.докумПостав.организация "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.докумПостав.клиенты.наимЗаказ
+      class=(if (v-get validationModel.формирРаспред.докумПостав.клиенты "наимЗаказ" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.докумПостав.клиенты.наимЗаказ-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-докумПостав-клиенты-наимЗаказ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред.докумПостав.клиенты "наимЗаказ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.докумПостав.клиенты.телефон
+      class=(if (v-get validationModel.формирРаспред.докумПостав.клиенты "телефон" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.докумПостав.клиенты.телефон-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-докумПостав-клиенты-телефон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред.докумПостав.клиенты "телефон" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.пунктПогрузки.наименование
+      class=(if (v-get validationModel.формирРаспред.пунктПогрузки "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.пунктПогрузки.наименование-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-пунктПогрузки-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред.пунктПогрузки "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.формирРаспред.докумПостав.клиенты.адресПостав
+      class=(if (v-get validationModel.формирРаспред.докумПостав.клиенты "адресПостав" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред.докумПостав.клиенты.адресПостав-caption")
+      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред-докумПостав-клиенты-адресПостав=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.формирРаспред.докумПостав.клиенты "адресПостав" "message")}}
+  </div>
   <div class="field" data-test-i-i-s-proekt-формир-рез-пос-e-статусЗаказа="true">
     <label>{{t "forms.i-i-s-proekt-формир-рез-пос-e.статусЗаказа-caption"}}</label>
     {{flexberry-dropdown
@@ -64,23 +124,5 @@
       readonly=readonly
     }}
     {{flexberry-validationmessage error=(v-get validationModel "удовлКл" "message")}}
-  </div>
-  <div class="field">
-    <label>{{t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.формирРаспред
-      displayAttributeName="номерДокРаспр"
-      autocomplete=true
-      relationName="формирРаспред"
-      projection="ФормирРаспредL"
-      title=(t "forms.i-i-s-proekt-формир-рез-пос-e.формирРаспред-caption")
-      readonly=readonly
-      componentName="формирРаспредLookup"
-      class=(if (v-get validationModel "формирРаспред" "isInvalid") "error")
-      data-test-i-i-s-proekt-формир-рез-пос-e-формирРаспред=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "формирРаспред" "message")}}
   </div>
 </form>
