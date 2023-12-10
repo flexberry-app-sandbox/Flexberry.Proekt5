@@ -89,7 +89,7 @@
               "attrs": [
                 {
                   "name": "наименование",
-                  "caption": "",
+                  "caption": "Организация",
                   "hidden": false,
                   "index": 3
                 }
@@ -139,14 +139,14 @@
           "attrs": [
             {
               "name": "номерДог",
-              "caption": "",
+              "caption": "НомерДокументаПостав",
               "hidden": false,
               "index": 2
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "НомерДокументаПостав",
           "name": "докумПостав",
           "relatedTo": "i-i-s-proekt-докум-постав",
           "inverse": null
