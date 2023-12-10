@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-докум-постав-e",
+  "editForm": "i-i-s-proekt-докум-постав-e",
+  "external": false,
+  "caption": "Докум постав",
+  "name": "IISProektДокумПоставL",
+  "className": "ДокумПоставL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-докум-постав",
+      "modelProjection": "ДокумПоставL"
+    }
+  ]
+}

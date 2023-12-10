@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-формир-распред-e",
+  "editForm": "i-i-s-proekt-формир-распред-e",
+  "external": false,
+  "caption": "Формир распред",
+  "name": "IISProektФормирРаспредL",
+  "className": "ФормирРаспредL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-формир-распред",
+      "modelProjection": "ФормирРаспредL"
+    }
+  ]
+}

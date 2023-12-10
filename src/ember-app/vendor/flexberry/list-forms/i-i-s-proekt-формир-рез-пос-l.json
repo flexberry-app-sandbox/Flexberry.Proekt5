@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-формир-рез-пос-e",
+  "editForm": "i-i-s-proekt-формир-рез-пос-e",
+  "external": false,
+  "caption": "Формир рез пос",
+  "name": "IISProektФормирРезПосL",
+  "className": "ФормирРезПосL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-формир-рез-пос",
+      "modelProjection": "ФормирРезПосL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-список-контей-e",
+  "editForm": "i-i-s-proekt-список-контей-e",
+  "external": false,
+  "caption": "Список контей",
+  "name": "IISProektСписокКонтейL",
+  "className": "СписокКонтейL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-список-контей",
+      "modelProjection": "СписокКонтейL"
+    }
+  ]
+}
