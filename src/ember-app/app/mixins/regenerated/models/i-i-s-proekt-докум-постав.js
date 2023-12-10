@@ -59,7 +59,7 @@ export let defineProjections = function (modelClass) {
     }, { index: 2, displayMemberPath: 'наименование' }),
     клиенты: belongsTo('i-i-s-proekt-клиенты', 'Клиенты', {
       наимЗаказ: attr('Наим заказ', { index: 5, hidden: true }),
-      адресПостав: attr('', { index: 6 })
+      адресПостав: attr('Адрес поставки', { index: 6 })
     }, { index: 4, displayMemberPath: 'наимЗаказ' }),
     тЧИнфОЗак: hasMany('i-i-s-proekt-т-ч-инф-о-зак', 'Т ч инф о зак', {
       товары: belongsTo('i-i-s-proekt-товары', 'Товары', {

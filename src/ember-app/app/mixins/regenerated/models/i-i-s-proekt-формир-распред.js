@@ -61,27 +61,7 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРаспредE', 'i-i-s-proekt-формир-распред', {
     дата: attr('Дата', { index: 0 }),
-    номерДокРаспр: attr('', { index: 1 }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'НомерДокументаПостав', {
-      номерДог: attr('НомерДокументаПостав', { index: 2 }),
-      организация: belongsTo('i-i-s-proekt-организация', '', {
-        наименование: attr('Организация', { index: 3 })
-      }, { index: -1, hidden: true }),
-      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
-        наимЗаказ: attr('', { index: 4 }),
-        телефон: attr('', { index: 5 }),
-        адресПостав: attr('', { index: 7 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true }),
-    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', '', {
-      наименование: attr('', { index: 6 })
-    }, { index: -1, hidden: true }),
-    списокБарж: belongsTo('i-i-s-proekt-список-барж', '', {
-      номерБаржи: attr('', { index: 8 })
-    }, { index: -1, hidden: true }),
-    списокКонтей: belongsTo('i-i-s-proekt-список-контей', '', {
-      номерКонт: attr('', { index: 9 })
-    }, { index: -1, hidden: true })
+    номерДокРаспр: attr('', { index: 1 })
   });
 
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {

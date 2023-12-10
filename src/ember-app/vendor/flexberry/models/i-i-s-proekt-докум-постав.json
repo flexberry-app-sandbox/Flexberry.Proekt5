@@ -103,7 +103,7 @@
             },
             {
               "name": "адресПостав",
-              "caption": "",
+              "caption": "Адрес поставки",
               "hidden": false,
               "index": 6
             }
