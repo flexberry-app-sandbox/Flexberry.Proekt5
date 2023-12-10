@@ -60,20 +60,28 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРаспредE', 'i-i-s-proekt-формир-распред', {
-    номерДокРаспр: attr('Номер док распр', { index: 0 }),
-    дата: attr('Дата', { index: 1 }),
-    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', 'Пункт погрузки', {
-      наименование: attr('Наименование', { index: 3, hidden: true })
-    }, { index: 2, displayMemberPath: 'наименование' }),
-    списокБарж: belongsTo('i-i-s-proekt-список-барж', 'Список барж', {
-      производитель: attr('Производитель', { index: 5, hidden: true })
-    }, { index: 4, displayMemberPath: 'производитель' }),
-    списокКонтей: belongsTo('i-i-s-proekt-список-контей', 'Список контей', {
-      наимКонт: attr('Наим конт', { index: 7, hidden: true })
-    }, { index: 6, displayMemberPath: 'наимКонт' }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'Докум постав', {
-      дата: attr('Дата', { index: 9, hidden: true })
-    }, { index: 8, displayMemberPath: 'дата' })
+    дата: attr('Дата', { index: 0 }),
+    номерДокРаспр: attr('', { index: 1 }),
+    докумПостав: belongsTo('i-i-s-proekt-докум-постав', '', {
+      номерДог: attr('', { index: 2 }),
+      организация: belongsTo('i-i-s-proekt-организация', '', {
+        наименование: attr('', { index: 3 })
+      }, { index: -1, hidden: true }),
+      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
+        наимЗаказ: attr('', { index: 4 }),
+        телефон: attr('', { index: 5 }),
+        адресПостав: attr('', { index: 7 })
+      }, { index: -1, hidden: true })
+    }, { index: -1, hidden: true }),
+    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', '', {
+      наименование: attr('', { index: 6 })
+    }, { index: -1, hidden: true }),
+    списокБарж: belongsTo('i-i-s-proekt-список-барж', '', {
+      номерБаржи: attr('', { index: 8 })
+    }, { index: -1, hidden: true }),
+    списокКонтей: belongsTo('i-i-s-proekt-список-контей', '', {
+      номерКонт: attr('', { index: 9 })
+    }, { index: -1, hidden: true })
   });
 
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {

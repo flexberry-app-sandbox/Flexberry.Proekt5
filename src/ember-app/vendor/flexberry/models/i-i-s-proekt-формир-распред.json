@@ -62,101 +62,156 @@
       "modelName": "i-i-s-proekt-формир-распред",
       "attrs": [
         {
-          "name": "номерДокРаспр",
-          "caption": "Номер док распр",
+          "name": "дата",
+          "caption": "Дата",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "дата",
-          "caption": "Дата",
+          "name": "номерДокРаспр",
+          "caption": "",
           "hidden": false,
           "index": 1
         }
       ],
       "belongsTo": [
         {
-          "lookupValue": "Наименование",
-          "lookupValueField": "наименование",
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДокумПостав",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ДокумПостав.Организация",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "организация",
+              "relatedTo": "i-i-s-proekt-организация",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ДокумПостав.Клиенты",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наимЗаказ",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 4
+                },
+                {
+                  "name": "телефон",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 5
+                },
+                {
+                  "name": "адресПостав",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 7
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "клиенты",
+              "relatedTo": "i-i-s-proekt-клиенты",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерДог",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "докумПостав",
+          "relatedTo": "i-i-s-proekt-докум-постав",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "ПунктПогрузки",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
               "name": "наименование",
-              "caption": "Наименование",
-              "hidden": true,
-              "index": 3
+              "caption": "",
+              "hidden": false,
+              "index": 6
             }
           ],
-          "index": 2,
-          "type": "standard",
-          "caption": "Пункт погрузки",
+          "index": -1,
+          "type": "default",
+          "caption": "",
           "name": "пунктПогрузки",
           "relatedTo": "i-i-s-proekt-пункт-погрузки",
           "inverse": null
         },
         {
-          "lookupValue": "Производитель",
-          "lookupValueField": "производитель",
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "СписокБарж",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
-              "name": "производитель",
-              "caption": "Производитель",
-              "hidden": true,
-              "index": 5
+              "name": "номерБаржи",
+              "caption": "",
+              "hidden": false,
+              "index": 8
             }
           ],
-          "index": 4,
-          "type": "standard",
-          "caption": "Список барж",
+          "index": -1,
+          "type": "default",
+          "caption": "",
           "name": "списокБарж",
           "relatedTo": "i-i-s-proekt-список-барж",
           "inverse": null
         },
         {
-          "lookupValue": "НаимКонт",
-          "lookupValueField": "наимКонт",
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "СписокКонтей",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
-              "name": "наимКонт",
-              "caption": "Наим конт",
-              "hidden": true,
-              "index": 7
-            }
-          ],
-          "index": 6,
-          "type": "standard",
-          "caption": "Список контей",
-          "name": "списокКонтей",
-          "relatedTo": "i-i-s-proekt-список-контей",
-          "inverse": null
-        },
-        {
-          "lookupValue": "Дата",
-          "lookupValueField": "дата",
-          "relationName": "ДокумПостав",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "дата",
-              "caption": "Дата",
-              "hidden": true,
+              "name": "номерКонт",
+              "caption": "",
+              "hidden": false,
               "index": 9
             }
           ],
-          "index": 8,
-          "type": "standard",
-          "caption": "Докум постав",
-          "name": "докумПостав",
-          "relatedTo": "i-i-s-proekt-докум-постав",
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-proekt-список-контей",
           "inverse": null
         }
       ],

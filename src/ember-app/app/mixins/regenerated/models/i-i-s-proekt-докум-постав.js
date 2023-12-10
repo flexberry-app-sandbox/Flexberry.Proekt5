@@ -58,13 +58,17 @@ export let defineProjections = function (modelClass) {
       наименование: attr('Наименование', { index: 3, hidden: true })
     }, { index: 2, displayMemberPath: 'наименование' }),
     клиенты: belongsTo('i-i-s-proekt-клиенты', 'Клиенты', {
-      наимЗаказ: attr('Наим заказ', { index: 5, hidden: true })
+      наимЗаказ: attr('Наим заказ', { index: 5, hidden: true }),
+      адресПостав: attr('', { index: 6 })
     }, { index: 4, displayMemberPath: 'наимЗаказ' }),
     тЧИнфОЗак: hasMany('i-i-s-proekt-т-ч-инф-о-зак', 'Т ч инф о зак', {
-      количество: attr('Количество', { index: 0 }),
       товары: belongsTo('i-i-s-proekt-товары', 'Товары', {
-        наимТовара: attr('Наим товара', { index: 2, hidden: true })
-      }, { index: 1, displayMemberPath: 'наимТовара' })
+        наимТовара: attr('Наим товара', { index: 1, hidden: true }),
+        едИзм: attr('', { index: 3 }),
+        цена: attr('', { index: 4 }),
+        масса: attr('', { index: 5 })
+      }, { index: 0, displayMemberPath: 'наимТовара' }),
+      количество: attr('Количество', { index: 2 })
     })
   });
 

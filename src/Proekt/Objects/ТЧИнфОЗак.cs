@@ -30,9 +30,12 @@ namespace IIS.Proekt
     [Caption("Т ч инф о зак")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧИнфОЗакE", new string[] {
-            "Количество as \'Количество\'",
             "Товары as \'Товары\'",
-            "Товары.НаимТовара as \'Наим товара\'"}, Hidden=new string[] {
+            "Товары.НаимТовара as \'Наим товара\'",
+            "Количество as \'Количество\'",
+            "Товары.ЕдИзм",
+            "Товары.Цена",
+            "Товары.Масса"}, Hidden=new string[] {
             "Товары.НаимТовара"})]
     [MasterViewDefineAttribute("ТЧИнфОЗакE", "Товары", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "НаимТовара")]
     public class ТЧИнфОЗак : ICSSoft.STORMNET.DataObject

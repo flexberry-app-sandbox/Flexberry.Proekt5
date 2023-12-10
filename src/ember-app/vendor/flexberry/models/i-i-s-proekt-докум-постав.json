@@ -100,6 +100,12 @@
               "caption": "Наим заказ",
               "hidden": true,
               "index": 5
+            },
+            {
+              "name": "адресПостав",
+              "caption": "",
+              "hidden": false,
+              "index": 6
             }
           ],
           "index": 4,
