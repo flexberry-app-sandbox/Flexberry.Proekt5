@@ -61,17 +61,11 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРаспредE', 'i-i-s-proekt-формир-распред', {
     дата: attr('Дата', { index: 0 }),
-    номерДокРаспр: attr('', { index: 1 })
+    номерДокРаспр: attr('Номер документа распределения', { index: 1 })
   });
 
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {
     номерДокРаспр: attr('Номер док распр', { index: 0 }),
-    дата: attr('Дата', { index: 1 }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'Номер договора', {
-      номерДог: attr('Номер договора', { index: 2 }),
-      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
-        наимЗаказ: attr('наименование заказчика', { index: 3 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true })
+    дата: attr('Дата', { index: 1 })
   });
 };
