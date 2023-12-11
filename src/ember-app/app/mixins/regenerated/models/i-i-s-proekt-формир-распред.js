@@ -65,7 +65,7 @@ export let defineProjections = function (modelClass) {
   });
 
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {
-    номерДокРаспр: attr('Номер док распр', { index: 0 }),
-    дата: attr('Дата', { index: 1 })
+    дата: attr('Дата', { index: 0 }),
+    номерДокРаспр: attr('Номер док распр', { index: 1 })
   });
 };

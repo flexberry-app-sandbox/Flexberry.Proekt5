@@ -82,14 +82,14 @@
       "modelName": "i-i-s-proekt-формир-распред",
       "attrs": [
         {
-          "name": "номерДокРаспр",
-          "caption": "Номер док распр",
+          "name": "дата",
+          "caption": "Дата",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "дата",
-          "caption": "Дата",
+          "name": "номерДокРаспр",
+          "caption": "Номер док распр",
           "hidden": false,
           "index": 1
         }
