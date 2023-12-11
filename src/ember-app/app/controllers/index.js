@@ -22,13 +22,13 @@ export default Controller.extend({
             link: 'i-i-s-proekt-список-барж-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-список-барж-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-список-барж-l.title'),
-            icon: 'building',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-proekt-пункт-погрузки-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-пункт-погрузки-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-пункт-погрузки-l.title'),
-            icon: 'chart line',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-proekt-список-контей-l',
@@ -40,37 +40,37 @@ export default Controller.extend({
             link: 'i-i-s-proekt-клиенты-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-клиенты-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-клиенты-l.title'),
-            icon: 'briefcase',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-proekt-формир-рез-пос-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-формир-рез-пос-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-формир-рез-пос-l.title'),
-            icon: 'table',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-proekt-организация-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-организация-l.title'),
-            icon: 'chart line',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-proekt-докум-постав-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-докум-постав-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-докум-постав-l.title'),
-            icon: 'calendar',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-proekt-формир-распред-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-формир-распред-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-формир-распред-l.title'),
-            icon: 'briefcase',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-proekt-товары-l',
             caption: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-товары-l.caption'),
             title: i18n.t('forms.application.sitemap.proekt.i-i-s-proekt-товары-l.title'),
-            icon: 'address card',
+            icon: 'briefcase',
             children: null
           }]
         }
