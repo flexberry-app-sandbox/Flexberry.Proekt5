@@ -89,7 +89,7 @@
               "attrs": [
                 {
                   "name": "наимЗаказ",
-                  "caption": "",
+                  "caption": "привет",
                   "hidden": false,
                   "index": 2
                 }
@@ -110,7 +110,7 @@
               "attrs": [
                 {
                   "name": "наименование",
-                  "caption": "",
+                  "caption": "я",
                   "hidden": false,
                   "index": 3
                 }
@@ -127,7 +127,7 @@
           "attrs": [],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "привет",
           "name": "докумПостав",
           "relatedTo": "i-i-s-proekt-докум-постав",
           "inverse": null
@@ -141,14 +141,14 @@
           "attrs": [
             {
               "name": "наименование",
-              "caption": "",
+              "caption": "рада",
               "hidden": false,
               "index": 4
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "рада",
           "name": "пунктПогрузки",
           "relatedTo": "i-i-s-proekt-пункт-погрузки",
           "inverse": null
@@ -162,14 +162,14 @@
           "attrs": [
             {
               "name": "номерБаржи",
-              "caption": "",
+              "caption": "ккк",
               "hidden": false,
               "index": 5
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "ккк",
           "name": "списокБарж",
           "relatedTo": "i-i-s-proekt-список-барж",
           "inverse": null
@@ -183,14 +183,14 @@
           "attrs": [
             {
               "name": "наимКонт",
-              "caption": "",
+              "caption": "лллл",
               "hidden": false,
               "index": 6
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "лллл",
           "name": "списокКонтей",
           "relatedTo": "i-i-s-proekt-список-контей",
           "inverse": null
@@ -230,7 +230,7 @@
               "attrs": [
                 {
                   "name": "наимЗаказ",
-                  "caption": "",
+                  "caption": "привет",
                   "hidden": false,
                   "index": 2
                 }
@@ -251,7 +251,7 @@
               "attrs": [
                 {
                   "name": "наименование",
-                  "caption": "",
+                  "caption": "я",
                   "hidden": false,
                   "index": 3
                 }
@@ -268,7 +268,7 @@
           "attrs": [],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "привет",
           "name": "докумПостав",
           "relatedTo": "i-i-s-proekt-докум-постав",
           "inverse": null
@@ -282,14 +282,14 @@
           "attrs": [
             {
               "name": "наименование",
-              "caption": "",
+              "caption": "рада",
               "hidden": false,
               "index": 4
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "рада",
           "name": "пунктПогрузки",
           "relatedTo": "i-i-s-proekt-пункт-погрузки",
           "inverse": null
@@ -303,14 +303,14 @@
           "attrs": [
             {
               "name": "номерБаржи",
-              "caption": "",
+              "caption": "ккк",
               "hidden": false,
               "index": 5
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "ккк",
           "name": "списокБарж",
           "relatedTo": "i-i-s-proekt-список-барж",
           "inverse": null
@@ -324,14 +324,14 @@
           "attrs": [
             {
               "name": "наимКонт",
-              "caption": "",
+              "caption": "лллл",
               "hidden": false,
               "index": 6
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "",
+          "caption": "лллл",
           "name": "списокКонтей",
           "relatedTo": "i-i-s-proekt-список-контей",
           "inverse": null
