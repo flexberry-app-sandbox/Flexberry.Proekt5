@@ -61,45 +61,11 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРаспредE', 'i-i-s-proekt-формир-распред', {
     дата: attr('Дата', { index: 0 }),
-    номерДокРаспр: attr('Номер документа распределения', { index: 1 }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'привет', {
-      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
-        наимЗаказ: attr('привет', { index: 2 })
-      }, { index: -1, hidden: true }),
-      организация: belongsTo('i-i-s-proekt-организация', '', {
-        наименование: attr('я', { index: 3 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true }),
-    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', 'рада', {
-      наименование: attr('рада', { index: 4 })
-    }, { index: -1, hidden: true }),
-    списокБарж: belongsTo('i-i-s-proekt-список-барж', 'ккк', {
-      номерБаржи: attr('ккк', { index: 5 })
-    }, { index: -1, hidden: true }),
-    списокКонтей: belongsTo('i-i-s-proekt-список-контей', 'лллл', {
-      наимКонт: attr('лллл', { index: 6 })
-    }, { index: -1, hidden: true })
+    номерДокРаспр: attr('Номер документа распределения', { index: 1 })
   });
 
   modelClass.defineProjection('ФормирРаспредL', 'i-i-s-proekt-формир-распред', {
     дата: attr('Дата', { index: 0 }),
-    номерДокРаспр: attr('Номер док распр', { index: 1 }),
-    докумПостав: belongsTo('i-i-s-proekt-докум-постав', 'привет', {
-      клиенты: belongsTo('i-i-s-proekt-клиенты', '', {
-        наимЗаказ: attr('привет', { index: 2 })
-      }, { index: -1, hidden: true }),
-      организация: belongsTo('i-i-s-proekt-организация', '', {
-        наименование: attr('я', { index: 3 })
-      }, { index: -1, hidden: true })
-    }, { index: -1, hidden: true }),
-    пунктПогрузки: belongsTo('i-i-s-proekt-пункт-погрузки', 'рада', {
-      наименование: attr('рада', { index: 4 })
-    }, { index: -1, hidden: true }),
-    списокБарж: belongsTo('i-i-s-proekt-список-барж', 'ккк', {
-      номерБаржи: attr('ккк', { index: 5 })
-    }, { index: -1, hidden: true }),
-    списокКонтей: belongsTo('i-i-s-proekt-список-контей', 'лллл', {
-      наимКонт: attr('лллл', { index: 6 })
-    }, { index: -1, hidden: true })
+    номерДокРаспр: attr('Номер док распр', { index: 1 })
   });
 };
