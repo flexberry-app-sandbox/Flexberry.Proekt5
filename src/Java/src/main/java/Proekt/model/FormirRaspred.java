@@ -30,6 +30,16 @@ public class FormirRaspred {
     private Date дата;
 
     @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "DokumPostav")
+    @Convert("DokumPostav")
+    @Column(name = "ДокумПостав", length = 16, unique = true, nullable = false)
+    private UUID _dokumpostavid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "DokumPostav", insertable = false, updatable = false)
+    private DokumPostav dokumpostav;
+
+    @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "PunktPogruzki")
     @Convert("PunktPogruzki")
     @Column(name = "ПунктПогрузки", length = 16, unique = true, nullable = false)
@@ -58,16 +68,6 @@ public class FormirRaspred {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "SpisokKontej", insertable = false, updatable = false)
     private SpisokKontej spisokkontej;
-
-    @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "DokumPostav")
-    @Convert("DokumPostav")
-    @Column(name = "ДокумПостав", length = 16, unique = true, nullable = false)
-    private UUID _dokumpostavid;
-
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "DokumPostav", insertable = false, updatable = false)
-    private DokumPostav dokumpostav;
 
 
     public FormirRaspred() {

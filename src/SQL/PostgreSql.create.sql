@@ -71,10 +71,10 @@ CREATE TABLE ФормирРаспред (
  primaryKey UUID NOT NULL,
  НомерДокРаспр INT NULL,
  Дата TIMESTAMP(3) NULL,
+ ДокумПостав UUID NOT NULL,
  ПунктПогрузки UUID NOT NULL,
  СписокБарж UUID NOT NULL,
  СписокКонтей UUID NOT NULL,
- ДокумПостав UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -207,6 +207,9 @@ CREATE INDEX Indexa8e02ee7ce1d4d7875e2138c9118c2f845750215 on ДокумПост
  ALTER TABLE ДокумПостав ADD CONSTRAINT FKe4cce7cea173ab6fb24a813e99e853668af4bd8d FOREIGN KEY (Клиенты) REFERENCES Клиенты; 
 CREATE INDEX Indexe4cce7cea173ab6fb24a813e99e853668af4bd8d on ДокумПостав (Клиенты); 
 
+ ALTER TABLE ФормирРаспред ADD CONSTRAINT FK949a1fe08d534fab7c6f4203c0cb65e2a0815589 FOREIGN KEY (ДокумПостав) REFERENCES ДокумПостав; 
+CREATE INDEX Index949a1fe08d534fab7c6f4203c0cb65e2a0815589 on ФормирРаспред (ДокумПостав); 
+
  ALTER TABLE ФормирРаспред ADD CONSTRAINT FK330a5bbb52776ec4ae98b7f26121bdc78707cea5 FOREIGN KEY (ПунктПогрузки) REFERENCES ПунктПогрузки; 
 CREATE INDEX Index330a5bbb52776ec4ae98b7f26121bdc78707cea5 on ФормирРаспред (ПунктПогрузки); 
 
@@ -215,9 +218,6 @@ CREATE INDEX Indexb5b0923f2cd7601526f519963348a1ddd676f709 on ФормирРас
 
  ALTER TABLE ФормирРаспред ADD CONSTRAINT FK7541797d608f40d0c4a91d6bdbb2d9a43d9f429a FOREIGN KEY (СписокКонтей) REFERENCES СписокКонтей; 
 CREATE INDEX Index7541797d608f40d0c4a91d6bdbb2d9a43d9f429a on ФормирРаспред (СписокКонтей); 
-
- ALTER TABLE ФормирРаспред ADD CONSTRAINT FK949a1fe08d534fab7c6f4203c0cb65e2a0815589 FOREIGN KEY (ДокумПостав) REFERENCES ДокумПостав; 
-CREATE INDEX Index949a1fe08d534fab7c6f4203c0cb65e2a0815589 on ФормирРаспред (ДокумПостав); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 
