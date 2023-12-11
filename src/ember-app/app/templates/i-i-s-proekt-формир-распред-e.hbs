@@ -45,4 +45,54 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "номерДокРаспр" "message")}}
   </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.клиенты.наимЗаказ
+      class=(if (v-get validationModel.докумПостав.клиенты "наимЗаказ" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-распред-e.докумПостав.клиенты.наимЗаказ-caption")
+      data-test-i-i-s-proekt-формир-распред-e-докумПостав-клиенты-наимЗаказ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.клиенты "наимЗаказ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.докумПостав.организация.наименование
+      class=(if (v-get validationModel.докумПостав.организация "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-распред-e.докумПостав.организация.наименование-caption")
+      data-test-i-i-s-proekt-формир-распред-e-докумПостав-организация-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.докумПостав.организация "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.пунктПогрузки.наименование
+      class=(if (v-get validationModel.пунктПогрузки "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-распред-e.пунктПогрузки.наименование-caption")
+      data-test-i-i-s-proekt-формир-распред-e-пунктПогрузки-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.пунктПогрузки "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.списокБарж.номерБаржи
+      class=(if (v-get validationModel.списокБарж "номерБаржи" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-распред-e.списокБарж.номерБаржи-caption")
+      data-test-i-i-s-proekt-формир-распред-e-списокБарж-номерБаржи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.списокБарж "номерБаржи" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.списокКонтей.наимКонт
+      class=(if (v-get validationModel.списокКонтей "наимКонт" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-формир-распред-e.списокКонтей.наимКонт-caption")
+      data-test-i-i-s-proekt-формир-распред-e-списокКонтей-наимКонт=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.списокКонтей "наимКонт" "message")}}
+  </div>
 </form>
